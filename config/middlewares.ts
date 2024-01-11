@@ -19,7 +19,12 @@ export default [
   "strapi::query",
   { name: "strapi::body", config: { jsonLimit: "25mb" } },
   "strapi::session",
-  "strapi::favicon",
+  {
+    name: "strapi::favicon",
+    config: {
+      path: "/public/favicon.ico",
+    },
+  },
   "strapi::public",
   "plugin::request-id.request-id",
 ];
