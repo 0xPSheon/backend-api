@@ -11,4 +11,8 @@ module.exports = ({ env }) => ({
       regenerateOnUpdate: true,
     },
   },
+  "import-export-entries": {
+    enabled: true,
+    config: {},
+  },
 });
