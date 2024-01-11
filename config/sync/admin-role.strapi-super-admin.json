@@ -83,6 +83,98 @@
       "conditions": []
     },
     {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::root-signer.root-signer",
+      "properties": {
+        "fields": [
+          "address",
+          "privateKey"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::root-signer.root-signer",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::root-signer.root-signer",
+      "properties": {
+        "fields": [
+          "address",
+          "privateKey"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::root-signer.root-signer",
+      "properties": {
+        "fields": [
+          "address",
+          "privateKey"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::whitelist.whitelist",
+      "properties": {
+        "fields": [
+          "address",
+          "description",
+          "phase",
+          "blocked"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::whitelist.whitelist",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::whitelist.whitelist",
+      "properties": {
+        "fields": [
+          "address",
+          "description",
+          "phase",
+          "blocked"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::whitelist.whitelist",
+      "properties": {
+        "fields": [
+          "address",
+          "description",
+          "phase",
+          "blocked"
+        ]
+      },
+      "conditions": []
+    },
+    {
       "action": "admin::api-tokens.access",
       "actionParameters": {},
       "subject": null,
