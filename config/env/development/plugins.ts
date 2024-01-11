@@ -28,4 +28,10 @@ module.exports = ({ env }) => ({
       syncDir: "config/sync/",
     },
   },
+  "request-id": {
+    enabled: true,
+    config: {
+      correlationIdHeader: "X-NFT-Trace-Id",
+    },
+  },
 });

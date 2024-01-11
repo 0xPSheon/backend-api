@@ -21,4 +21,5 @@ export default [
   "strapi::session",
   "strapi::favicon",
   "strapi::public",
+  "plugin::request-id.request-id",
 ];
