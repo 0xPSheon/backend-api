@@ -1,0 +1,231 @@
+{
+  "key": "plugin_content_manager_configuration_components::project.phase",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "displayName",
+      "defaultSortBy": "phaseId",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "phaseId": {
+        "edit": {
+          "label": "phaseId",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phaseId",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "phaseStage": {
+        "edit": {
+          "label": "phaseStage",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phaseStage",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "displayName": {
+        "edit": {
+          "label": "displayName",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "displayName",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "priceInEth": {
+        "edit": {
+          "label": "priceInEth",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "priceInEth",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "maxMintPerAddress": {
+        "edit": {
+          "label": "maxMintPerAddress",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "maxMintPerAddress",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "startedAt": {
+        "edit": {
+          "label": "startedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "startedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "finishedAt": {
+        "edit": {
+          "label": "finishedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "finishedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "totalSupply": {
+        "edit": {
+          "label": "totalSupply",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "totalSupply",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "revealed": {
+        "edit": {
+          "label": "revealed",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "revealed",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "phaseId",
+        "phaseStage",
+        "displayName"
+      ],
+      "edit": [
+        [
+          {
+            "name": "phaseId",
+            "size": 8
+          },
+          {
+            "name": "phaseStage",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "displayName",
+            "size": 8
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 8
+          }
+        ],
+        [
+          {
+            "name": "priceInEth",
+            "size": 4
+          },
+          {
+            "name": "maxMintPerAddress",
+            "size": 4
+          },
+          {
+            "name": "totalSupply",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "startedAt",
+            "size": 6
+          },
+          {
+            "name": "finishedAt",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "revealed",
+            "size": 4
+          }
+        ]
+      ]
+    },
+    "uid": "project.phase",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

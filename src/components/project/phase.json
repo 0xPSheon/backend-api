@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_project_phases",
+  "info": {
+    "displayName": "Phase"
+  },
+  "options": {},
+  "attributes": {
+    "phaseId": {
+      "type": "string",
+      "required": true
+    },
+    "phaseStage": {
+      "type": "integer",
+      "required": true
+    },
+    "displayName": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "priceInEth": {
+      "type": "float",
+      "required": true
+    },
+    "maxMintPerAddress": {
+      "type": "integer",
+      "default": 3
+    },
+    "totalSupply": {
+      "type": "integer",
+      "required": false,
+      "default": 1
+    },
+    "startedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "finishedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "revealed": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whitelists",
+  "info": {
+    "singularName": "whitelist",
+    "pluralName": "whitelists",
+    "displayName": "Whitelist"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "regex": "^0x[a-fA-F0-9]{40}$",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "phase": {
+      "type": "string",
+      "required": true
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
