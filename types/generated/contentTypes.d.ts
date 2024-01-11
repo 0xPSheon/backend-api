@@ -819,17 +819,14 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
   options: {
     draftAndPublish: false;
-    timestamps: true;
   };
   attributes: {
     username: Attribute.String &
-      Attribute.Required &
       Attribute.Unique &
       Attribute.SetMinMaxLength<{
         minLength: 3;
       }>;
     email: Attribute.Email &
-      Attribute.Required &
       Attribute.SetMinMaxLength<{
         minLength: 6;
       }>;
@@ -848,6 +845,8 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
       'manyToOne',
       'plugin::users-permissions.role'
     >;
+    address: Attribute.String;
+    isHighlighted: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
