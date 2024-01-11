@@ -19,6 +19,25 @@ const customRouter = (defaultRouter, customRoutes = []) => {
   };
 };
 
-const customRoutes = [];
+const customRoutes = [
+  {
+    method: "POST",
+    path: "/whitelist/clean",
+    handler: "whitelist.clean",
+    config: {
+      policies: [],
+      prefix: "",
+    },
+  },
+  {
+    method: "POST",
+    path: "/whitelist/add",
+    handler: "whitelist.add",
+    config: {
+      policies: [],
+      prefix: "",
+    },
+  },
+];
 
 export default customRouter(defaultRouter, customRoutes);
