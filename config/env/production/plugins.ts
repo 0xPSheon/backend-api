@@ -22,4 +22,10 @@ module.exports = ({ env }) => ({
       maxAge: 2592000,
     },
   },
+  "config-sync": {
+    enabled: true,
+    config: {
+      syncDir: "config/sync/",
+    },
+  },
 });
