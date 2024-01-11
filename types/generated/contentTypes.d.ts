@@ -426,6 +426,38 @@ export interface ApiRootSignerRootSigner extends Schema.SingleType {
   };
 }
 
+export interface ApiWhitelistWhitelist extends Schema.CollectionType {
+  collectionName: 'whitelists';
+  info: {
+    singularName: 'whitelist';
+    pluralName: 'whitelists';
+    displayName: 'Whitelist';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    address: Attribute.String & Attribute.Required;
+    description: Attribute.String;
+    phase: Attribute.String & Attribute.Required;
+    blocked: Attribute.Boolean & Attribute.DefaultTo<false>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::whitelist.whitelist',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::whitelist.whitelist',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -845,6 +877,7 @@ declare module '@strapi/types' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'api::project.project': ApiProjectProject;
       'api::root-signer.root-signer': ApiRootSignerRootSigner;
+      'api::whitelist.whitelist': ApiWhitelistWhitelist;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
