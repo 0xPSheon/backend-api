@@ -405,7 +405,9 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "address",
+          "isHighlighted"
         ]
       },
       "conditions": []
@@ -431,7 +433,9 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "address",
+          "isHighlighted"
         ]
       },
       "conditions": []
@@ -450,7 +454,9 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "address",
+          "isHighlighted"
         ]
       },
       "conditions": []

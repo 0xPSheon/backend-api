@@ -146,6 +146,34 @@
           "sortable": true
         }
       },
+      "address": {
+        "edit": {
+          "label": "address",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "address",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "isHighlighted": {
+        "edit": {
+          "label": "isHighlighted",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "isHighlighted",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -206,13 +234,17 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "username",
-        "email",
-        "confirmed"
-      ],
       "edit": [
+        [
+          {
+            "name": "address",
+            "size": 8
+          },
+          {
+            "name": "role",
+            "size": 4
+          }
+        ],
         [
           {
             "name": "username",
@@ -227,22 +259,28 @@
           {
             "name": "password",
             "size": 6
-          },
-          {
-            "name": "confirmed",
-            "size": 4
           }
         ],
         [
+          {
+            "name": "confirmed",
+            "size": 4
+          },
           {
             "name": "blocked",
             "size": 4
           },
           {
-            "name": "role",
-            "size": 6
+            "name": "isHighlighted",
+            "size": 4
           }
         ]
+      ],
+      "list": [
+        "id",
+        "username",
+        "email",
+        "confirmed"
       ]
     },
     "uid": "plugin::users-permissions.user"
