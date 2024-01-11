@@ -396,6 +396,36 @@ export interface ApiProjectProject extends Schema.SingleType {
   };
 }
 
+export interface ApiRootSignerRootSigner extends Schema.SingleType {
+  collectionName: 'root_signers';
+  info: {
+    singularName: 'root-signer';
+    pluralName: 'root-signers';
+    displayName: 'RootSigner';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    address: Attribute.String & Attribute.Required;
+    privateKey: Attribute.String & Attribute.Required;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::root-signer.root-signer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::root-signer.root-signer',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -814,6 +844,7 @@ declare module '@strapi/types' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'api::project.project': ApiProjectProject;
+      'api::root-signer.root-signer': ApiRootSignerRootSigner;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
