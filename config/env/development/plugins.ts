@@ -1,4 +1,10 @@
 module.exports = ({ env }) => ({
+  documentation: {
+    enabled: true,
+    config: {
+      info: { version: "0.0.1" },
+    },
+  },
   upload: {
     config: {
       provider: "local",
