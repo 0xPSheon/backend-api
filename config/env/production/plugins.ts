@@ -28,6 +28,13 @@ module.exports = ({ env }) => ({
       syncDir: "config/sync/",
     },
   },
+  sentry: {
+    enabled: true,
+    config: {
+      dsn: env("SENTRY_DSN"),
+      sendMetadata: true,
+    },
+  },
   "request-id": {
     enabled: true,
     config: {
