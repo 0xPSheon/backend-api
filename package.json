@@ -31,7 +31,8 @@
     "name": "PSheon"
   },
   "strapi": {
-    "uuid": "e1307c07-4c94-4c01-afd4-72bc11590991"
+    "uuid": "e1307c07-4c94-4c01-afd4-72bc11590991",
+    "telemetryDisabled": true
   },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
