@@ -1,10 +1,10 @@
 {
   "name": "backend-api",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "0.0.1",
+  "description": "For NFT course",
   "scripts": {
-    "develop": "strapi develop",
+    "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
@@ -22,7 +22,7 @@
     "styled-components": "5.3.3"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "PSheon"
   },
   "strapi": {
     "uuid": "e1307c07-4c94-4c01-afd4-72bc11590991"
