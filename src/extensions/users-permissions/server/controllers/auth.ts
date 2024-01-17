@@ -102,6 +102,7 @@ export const connectWallet = async (ctx) => {
           data: {
             username: connectAddress,
             address: formattedConnectAddress,
+            provider: "local",
             conformed: true,
             role: role.id,
           },
