@@ -375,6 +375,7 @@ export interface ApiProjectProject extends Schema.SingleType {
   };
   attributes: {
     displayName: Attribute.String & Attribute.Required;
+    useChainName: Attribute.String;
     description: Attribute.String;
     contractAddress: Attribute.String;
     phases: Attribute.Component<'project.phase', true>;

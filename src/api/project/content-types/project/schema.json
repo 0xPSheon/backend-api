@@ -16,6 +16,9 @@
       "type": "string",
       "required": true
     },
+    "useChainName": {
+      "type": "string"
+    },
     "description": {
       "type": "string"
     },
