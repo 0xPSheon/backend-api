@@ -33,6 +33,20 @@
           "sortable": true
         }
       },
+      "useChainName": {
+        "edit": {
+          "label": "useChainName",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "useChainName",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "description": {
         "edit": {
           "label": "description",
@@ -61,20 +75,6 @@
           "sortable": true
         }
       },
-      "contractABI": {
-        "edit": {
-          "label": "contractABI",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "contractABI",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "phases": {
         "edit": {
           "label": "phases",
@@ -85,6 +85,20 @@
         },
         "list": {
           "label": "phases",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "contractABI": {
+        "edit": {
+          "label": "contractABI",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "contractABI",
           "searchable": false,
           "sortable": false
         }
@@ -154,6 +168,10 @@
           {
             "name": "displayName",
             "size": 8
+          },
+          {
+            "name": "useChainName",
+            "size": 4
           }
         ],
         [

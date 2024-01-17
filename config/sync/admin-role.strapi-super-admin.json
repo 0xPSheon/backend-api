@@ -10,6 +10,7 @@
       "properties": {
         "fields": [
           "displayName",
+          "useChainName",
           "description",
           "contractAddress",
           "phases.phaseId",
@@ -41,6 +42,7 @@
       "properties": {
         "fields": [
           "displayName",
+          "useChainName",
           "description",
           "contractAddress",
           "phases.phaseId",
@@ -65,6 +67,7 @@
       "properties": {
         "fields": [
           "displayName",
+          "useChainName",
           "description",
           "contractAddress",
           "phases.phaseId",
