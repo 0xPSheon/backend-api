@@ -4,6 +4,9 @@
   "type": "public",
   "permissions": [
     {
+      "action": "api::project.project.find"
+    },
+    {
       "action": "plugin::users-permissions.auth.callback"
     },
     {

@@ -4,7 +4,16 @@
   "type": "authenticated",
   "permissions": [
     {
+      "action": "api::whitelist.whitelist.check"
+    },
+    {
+      "action": "api::whitelist.whitelist.generateHash"
+    },
+    {
       "action": "plugin::users-permissions.auth.changePassword"
+    },
+    {
+      "action": "plugin::users-permissions.role.find"
     },
     {
       "action": "plugin::users-permissions.user.me"
