@@ -38,6 +38,24 @@ const customRoutes = [
       prefix: "",
     },
   },
+  {
+    method: "POST",
+    path: "/whitelist/check",
+    handler: "whitelist.check",
+    config: {
+      policies: [],
+      prefix: "",
+    },
+  },
+  {
+    method: "POST",
+    path: "/whitelist/hash",
+    handler: "whitelist.generateHash",
+    config: {
+      policies: [],
+      prefix: "",
+    },
+  },
 ];
 
 export default customRouter(defaultRouter, customRoutes);
